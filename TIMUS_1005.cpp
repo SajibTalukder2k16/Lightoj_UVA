@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define fastread     ios_base::sync_with_stdio(false);cin.tie(NULL);
 int weight[21];
 int n;
 int foo(int pos,int first,int second)
@@ -13,7 +12,6 @@ int foo(int pos,int first,int second)
 }
 int main()
 {
-    fastread
     cin>>n;
     for(int i=0;i<n;i++)
         cin>>weight[i];
