@@ -8,7 +8,7 @@ using namespace std;
 #define white 0
 #define grey 1
 #define black 2
-///UVA 11518 WA
+///UVA 11518
 vector<int>adj_node[10001];
 int visited[10001]={0};
 int timing = 0;
@@ -55,12 +55,7 @@ int main()
         }
         int cnt = 0;
         for(int i=1;i<=n;i++)
-            if(visited[i]==white)
-                cnt++;
-        //cout<<"Not visited: "<<cnt<<endl;
-        cout<<n-cnt<<endl;
-        for(int i=1;i<=n;i++)
             adj_node[i].clear();
-        //cout<<timing/2<<endl;
+        cout<<timing/2<<endl;
     }
 }
